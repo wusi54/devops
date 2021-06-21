@@ -18,16 +18,17 @@ database:mysql
 cache：redis
 
 3.Deliverable & Documentation
-3.1 安装
+1） 安装
 pip install -r requestment.txt
-3.2 启动服务
-python3 main.py
+2） 启动服务
+python3 main.py   
 或
 uvicorn main:app --host 0.0.0.0 --port 8000 
-3.3 ci/cd
+3） ci/cd
 docker build dockerFile
 通过jenkins进行编译打包，然后推送image仓库，发布通过k8s进行发布
-3.4 说明
+4） 说明
+
 
 
 
